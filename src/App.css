@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:"Hanken Grotesk",sans-serif;
+  font-size: 18px;
+  --Light-red:hsl(0, 100%, 67%);
+  --Orangey-yellow:hsl(39, 100%, 56%);
+  --Green-teal:hsl(166, 100%, 37%);
+  --Cobalt-blue:hsl(234, 85%, 45%);
+  --Light-slate-blue:hsl(252, 100%, 67%);
+  --Light-royal-blue:hsl(241, 81%, 54%);
+  --Violet-blue-circle:hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle:hsla(241, 72%, 46%, 0);
+  --white:hsl(0, 0%, 100%);
+  --Pale-blue:hsl(221, 100%, 96%);
+  --Light-lavender:hsl(241, 100%, 89%);
+  --Dark-gray-blue:hsl(224, 30%, 27%);
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  height: 100%;
+  max-width: 1440px;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.outerbox {
+  max-width: 736px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 10px 10px 40px hsl(240, 37%, 96%);
+}
+.outerbox>div {
+  flex: 1;
+}
+.resultbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 0 60px;
+  border-radius: 25px;
+}
+.resulthead {
+  font-size:24px;
+  color:var(--Light-lavender);
+  margin-top:43px;
+  margin-bottom:35px;
+}
+.resultscore {
+  max-width:200px;
+  height: 200px;
+  background:linear-gradient(180deg,
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0));
+  padding: 40px 54px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  color: var(--Light-lavender);
+}
+.resultscore span {
+  font-size: 80px;
+  font-weight: 800;
+  color: var(--white);
+}
+.resultbox h2 {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.resultdes {
+  margin: auto;
+  font-size: 17px;
+  color: var(--Light-lavender);
+  margin-bottom: 60px;
+}
+.summarybox {
+  display: felx;
+  flex-direction: column;
+  align-items: center;
+  padding:45px 40px;
+}
+.summarybox h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color:var(--Dark-gray-blue);
+  margin-bottom: 30px;
+}
+.listbox {
+  border-radius: 10px;
+  margin-bottom:18px;
+  /* opacity:0.1; */
+}
+.listbox {
+  display: flex;
+  padding:18px 16px;
+  justify-content: space-between;
+}
+.listbox img {
+  margin-right:15px;
+}
+.listbox p {
+  color: hsl(228, 2%, 60%);
+  font-weight: 700;
+} 
+.score{
+  color:var(--Dark-gray-blue);
+  font-weight: 700;
+}
+.button {
+  width: 100%;
+  background-color: var(--Dark-gray-blue);
+  border: none;
+  color: var(--white);
+  border-radius: 50px;
+  padding: 20px 106px ;
+  margin-top: 40px;
+}
+@media screen and (max-width: 570px) {
+    .outerbox {
+      flex-direction:column;
+    }
+    .resultbox {
+      border-radius: 0 0 20px 20px;
+    }
+    .button {
+      margin-top: 24px;
+    }
+}
