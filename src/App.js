@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './Index.css';
 import data from "./data.json";
 
 function App() {

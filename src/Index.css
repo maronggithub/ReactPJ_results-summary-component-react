@@ -129,6 +129,9 @@
   padding: 20px 106px ;
   margin-top: 40px;
 }
+.button:hover {
+  background:linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 @media screen and (max-width: 570px) {
     .outerbox {
       flex-direction:column;
